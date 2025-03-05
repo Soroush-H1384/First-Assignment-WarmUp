@@ -4,7 +4,7 @@ public class Exercises {
     /*
         complete this function to check if the input number is prime or not
      */
-    public boolean isPrime(long n) {
+    public static boolean isPrime(long n) {
         if(n == 1){
             return false;
         }
@@ -17,6 +17,7 @@ public class Exercises {
         }
         return true;
     }
+    // Question 2 >> Tested >> Correct
 
     /*
         implement an algorithm to find out the index of input number in a fibonacci sequence starting from 0, 1
@@ -46,14 +47,14 @@ public class Exercises {
                 i++;
             }
             if(number1 == n){
-                System.out.println(i);
+                return i;
             }
-            return -1;  
         }
-
-
+            return -1;
     }
+    // Question 2 >> Tested >> Correct
 
+    
     /*
         you should create a triangle with "*" and return a two-dimensional array of characters based on that
         the triangle's area is empty, which means some characters should be " "
@@ -79,5 +80,6 @@ public class Exercises {
 
     public static void main(String[] args) {
         // you can test your code here, but then it should be checked with test cases
+        System.out.println(isPrime(2147483647));;
     }
 }

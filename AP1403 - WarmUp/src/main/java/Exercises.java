@@ -1,11 +1,21 @@
+
 public class Exercises {
 
     /*
         complete this function to check if the input number is prime or not
      */
     public boolean isPrime(long n) {
-        // todo
-        return false;
+        if(n == 1){
+            return false;
+        }
+        int i = 2;
+        while(i < n){
+           if(n % i == 0){
+               return false;
+           }
+           i++;
+        }
+        return true;
     }
 
     /*
@@ -15,8 +25,33 @@ public class Exercises {
         if the input is not a fibonacci number with description above, return -1
      */
     public long fibonacciIndex(long n) {
-        // todo
-        return -1;
+        if(n == 0){
+            return 0;
+        }
+        else if(n == 1){
+            return 1;
+        }
+        else{
+            int i = 2;
+            int number1 = 1;
+            int number2 = 1;
+            while(number1 < n){
+                // Swap(number1,number2) -->
+                int temp;
+                temp = number2;
+                number2 = number1;
+                number1 = temp;
+                // <--
+                number1 += number2;
+                i++;
+            }
+            if(number1 == n){
+                System.out.println(i);
+            }
+            return -1;  
+        }
+
+
     }
 
     /*

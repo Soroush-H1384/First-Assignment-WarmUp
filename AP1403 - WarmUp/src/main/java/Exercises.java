@@ -74,11 +74,38 @@ public class Exercises {
         the output has to be a two-dimensional array of characters, so don't just print the triangle!
      */
     public char[][] generateTriangle(int n) {
-        // todo
-        return null;
+        char[][] Triangle = new char[n][];
+        if(n <= 3){
+            for(int i = 0; i <= n; i++){
+                for(int j = 0; j <= i ; j++){
+                    Triangle[i][j] = '*';
+                }
+            }
+        }
+        else if(n > 3){
+            Triangle[0][0] = '*';
+            for(int i = 0; i < n; i++){
+                for(int j = 0; j <= i; j++){
+                    if(j == 0 || j == n){
+                        Triangle[i][j] = '*';
+                    }
+                    else{
+                        Triangle[i][j] = ' ';
+                    }
+                }
+            }
+            for(int i = 0; i < n; i++){
+                Triangle[n][i] = '*';
+            }
+        }
+        else{
+            return null;
+        }
+        return Triangle;
     }
 
     public static void main(String[] args) {
         // you can test your code here, but then it should be checked with test cases
+        
     }
 }

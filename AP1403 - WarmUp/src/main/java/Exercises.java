@@ -1,3 +1,4 @@
+import com.sun.tools.javac.Main;
 
 public class Exercises {
 
@@ -17,7 +18,7 @@ public class Exercises {
         }
         return true;
     }
-    // Question 2 >> Tested >> Correct
+    // Question 1 >> Tested >> Correct
 
     /*
         implement an algorithm to find out the index of input number in a fibonacci sequence starting from 0, 1

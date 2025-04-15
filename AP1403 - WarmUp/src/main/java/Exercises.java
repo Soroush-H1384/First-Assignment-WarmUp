@@ -1,4 +1,5 @@
 public class Exercises {
+    /// question 3
     public boolean isPrime(long n) {
         if(n == 1){
             return false;
@@ -12,7 +13,7 @@ public class Exercises {
         }
         return true;
     }
-/// quesation 2
+/// question 2
     public long fibonacciIndex(long n) {
         if(n == 0){
             return 0;
